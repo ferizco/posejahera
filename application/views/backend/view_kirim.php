@@ -123,6 +123,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                   <p>Mobil    : <b> <?php echo $kirim['kd_mobil']." [".$kirim['nama_mobil'].'-'.$kirim['plat_mobil'] ?>]</b></p> 
                 <p>Tanggal : <b> <?php echo $kirim['tanggal']?></b></p>
                   <p>Harga : <b>Rp <?php echo $kirim['harga']; ?></b></p>
+                  <p>Created Admin : <b> <?php echo $kirim['nama_user']; ?></b></p>
                 </div>                   
                   </div>
                 

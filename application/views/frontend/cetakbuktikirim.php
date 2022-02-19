@@ -134,7 +134,7 @@
             </pre>
             <br><br>
             <p> Petugas loket, </p><br>
-            <p>(_____________)</p>
+            <p>(&nbsp; <?php echo $kirim[0]['nama_user'];?> &nbsp;)</p>
 
         </td>
     </tr>

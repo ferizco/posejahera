@@ -25,7 +25,7 @@ class Kirim_barang extends CI_Controller {
 
     public function viewkirim($id=''){
 		$data['title'] = "View Pengiriman";
-		$data['kirim'] = $this->db->query("SELECT * FROM kirim LEFT JOIN mobil on kirim.kd_mobil = mobil.kd_mobil WHERE kd_kirim ='".$id."'")->row_array();
+		$data['kirim'] = $this->db->query("SELECT * FROM kirim LEFT JOIN mobil on kirim.kd_mobil = mobil.kd_mobil LEFT JOIN user on kirim.kd_user = user.kd_user WHERE kd_kirim ='".$id."'")->row_array();
 
 		if ($data['kirim']) {
 			$this->load->view('backend/view_kirim', $data);
@@ -38,6 +38,7 @@ class Kirim_barang extends CI_Controller {
 
 	public function tambahpengiriman($id=''){
 		$kode = $this->getkod_model->get_kodkir();
+		$kd_user = $this->session->userdata('kd_user');
 			$simpan = array(
 					'kd_kirim' => $kode,
 					'nama_pengirim' => $this->input->post('nama_pengirim'),
@@ -49,6 +50,7 @@ class Kirim_barang extends CI_Controller {
 					'kd_mobil' => $this->input->post('mobil'),
 					'tanggal' => $this->input->post('tanggal'),
 					'harga' =>  $this->input->post('harga'),
+					'kd_user'=> $kd_user
 					 );
 
 			$this->db->insert('kirim', $simpan);
@@ -64,7 +66,7 @@ class Kirim_barang extends CI_Controller {
 	}
 
 	public function cetak($id=''){
-		$data['kirim'] = $this->db->query("SELECT * FROM kirim WHERE kd_kirim ='".$id."'")->result_array();
+		$data['kirim'] = $this->db->query("SELECT * FROM kirim LEFT JOIN user on kirim.kd_user = user.kd_user WHERE kd_kirim ='".$id."'")->result_array();
 		$this->load->view('frontend/cetakbuktikirim', $data);
 	}
 

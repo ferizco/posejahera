@@ -86,7 +86,7 @@
 
           </li>
         <?php }else{ } ?>
-
+          
       </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -148,9 +148,9 @@
 
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="<?php echo base_url() ?>backend/login/changepassword/<?php echo $this->session->userdata('kd_user') ?>" >
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+                  Ganti Password
                 </a>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">
                   <i class="fas fa-info-circle fa-sm fa-fw mr-2 text-gray-400"></i>

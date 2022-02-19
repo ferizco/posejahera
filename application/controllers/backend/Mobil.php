@@ -13,12 +13,14 @@ class Mobil extends CI_Controller {
 	// die(print_r($data));
 	$this->load->view('backend/mobil', $data);	
 	}
+
 	public function viewmobil($id=''){
 		$data['title'] = "View Mobil";
 		$data['mobil'] = $this->db->query("SELECT * FROM mobil WHERE kd_mobil = '".$id."'")->row_array();
 		// die(print_r($data));
 		$this->load->view('backend/view_mobil', $data);
 	}
+	
 	public function tambahmobil(){
 		$kode = $this->getkod_model->get_kodmobil();
 		$data = array(

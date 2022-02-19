@@ -19,8 +19,10 @@ class Admin_po extends CI_Controller {
 	}
 	public function index(){
 		$data['title'] = "List Admin";
-		$data['admin'] = $this->db->query("SELECT * FROM user")->result_array();
+		$data['admin'] = $this->db->query("SELECT * FROM user ")->result_array();
 		
 		$this->load->view('backend/admin', $data);
 	}
+
+	
 }

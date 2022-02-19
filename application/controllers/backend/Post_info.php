@@ -22,18 +22,20 @@ class Post_info extends CI_Controller {
 
 	public function index(){
 		$data['title'] = "Post Informasi";
-		$data['post'] = $this->db->query("SELECT * FROM informasi")->result_array();
+		$data['post'] = $this->db->query("SELECT * FROM informasi LEFT JOIN user on informasi.kd_user = user.kd_user " )->result_array();
 		
 		$this->load->view('backend/post', $data);
 	}
 
     public function addinfo(){
         $kode = $this->getkod_model->get_kodinf();
+		$kd_user = $this->session->userdata('kd_user');
 		$data = array(
 			'kd_info' => $kode,
 			'judul' => $this->input->post('judul'),
 			'subjudul' => $this->input->post('subjudul'),
-			'konten'		 => $this->input->post('konten')
+			'konten'		 => $this->input->post('konten'),
+			'kd_user'=> $kd_user
 			 );
              
 		

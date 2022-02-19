@@ -28,7 +28,8 @@
 				<thead>
 					<tr>
 						<th>Title</th>
-						<th style="width: 15%;" class="text-center">Status</th>
+						<th>Created by Admin</th>
+						<th style="width: 18%;" class="text-center">Status</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +38,9 @@
 						<td>
 							<div><?php echo($row['judul']) ?></div>
 							<div class="text-gray"><small><?php echo($row['created_at'])  ?><small></div>
+						</td>
+						<td>
+							<div><?php echo($row['nama_user']) ?></div>
 						</td>
 						<td>
 							<div class="action">

@@ -19,4 +19,9 @@ class M_pdf {
 		}
 
     }
+
+    public function M_pdf($param = '"en-GB-x","A4","","",10,10,10,10,6,3')
+    {
+        self::__construct($param);
+    }
 }

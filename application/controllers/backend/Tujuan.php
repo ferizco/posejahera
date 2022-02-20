@@ -33,7 +33,8 @@ class Tujuan extends CI_Controller {
 		$data = array(
 			'kota_tujuan' => $this->input->post('tujuan'),
 			'kd_tujuan' => $kode,
-			'terminal_tujuan' => $this->input->post('terminal'),
+			'loket_tujuan' => $this->input->post('terminal'),
+			'nama_loket' => $this->input->post('nama_loket')
 			 );
 		// die(print_r($data));
 		$this->db->insert('tujuan', $data);

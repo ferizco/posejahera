@@ -116,8 +116,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <div class="row">
                 <div class="col-sm-6">
                   <p>Kota Tujuan     : <b> <?php echo strtoupper($rute['kota_tujuan']) ?></b></p>
-                  <p>Nama Terminal  : <b><?php echo $rute['nama_terminal']; ?></b></p>
-                  <p>Tujuan  : <b><?php echo $rute['terminal_tujuan']; ?></b></p>
+                  <p>Nama Terminal  : <b><?php echo $rute['nama_loket']; ?></b></p>
+                  <p>Tujuan  : <b><?php echo $rute['loket_tujuan']; ?></b></p>
                 </div>
                 <div class="col-sm-6">
                 </div>

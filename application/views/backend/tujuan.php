@@ -31,8 +31,8 @@
                   <th>No</th>
                   <th>Kode</th>
                   <th>Kota Tujuan</th>
-                  <th>Info Terminal</th>
-                  <th>Nama Terminal</th>
+                  <th>Info Loket</th>
+                  <th>Nama Loket</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
@@ -42,8 +42,8 @@
                   <td><?php echo $i++; ?></td>
                   <td><?php echo $row['kd_tujuan']; ?></td>
                   <td><?php echo strtoupper($row['kota_tujuan']); ?></td>
-                  <td><?php echo  substr($row['terminal_tujuan'], 0, 90); ?></td>
-                  <td><?php echo  substr($row['nama_terminal'], 0, 90); ?></td>
+                  <td><?php echo  substr($row['loket_tujuan'], 0, 90); ?></td>
+                  <td><?php echo  substr($row['nama_loket'], 0, 90); ?></td>
                   <td align="center"><a href="<?php echo base_url('backend/tujuan/viewtujuan/'.$row['kd_tujuan']) ?>" class="btn btn-primary">VIEW</a></td>
                 </tr>
                 <?php } ?>
@@ -87,7 +87,11 @@
         </div>
         <div class="form-group">
           <div class="form-label-group">
-            <input type="text" id="terminal" name="terminal" class="form-control" placeholder="Info Terminal" required="required" autofocus="autofocus">
+            <input type="text" id="terminal" name="terminal" class="form-control" placeholder="Info Loket" required="required" autofocus="autofocus">
+          </div>
+        <div class="form-group">
+          <div class="form-label-group">
+            <input type="text" id="nama_loket" name="nama_loket" class="mt-3 form-control" placeholder="Nama Loket" required="required" autofocus="autofocus">
           </div>
         </div>
         <div class="modal-footer">

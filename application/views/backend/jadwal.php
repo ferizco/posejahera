@@ -15,7 +15,7 @@
     <?php $this->load->view('backend/include/base_nav'); ?>
     <!-- Begin Page Content -->
     <div class="container-fluid">
-      <h1 class="h3 mb-2 text-gray-800">Data Tujuan</h1>
+      <h1 class="h3 mb-2 text-gray-800">List Jadwal</h1>
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">

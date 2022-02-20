@@ -40,7 +40,7 @@
           <span>List Konfirmasi</span></a>
 
         <a class="nav-link" href="<?php echo base_url() ?>backend/post_info">
-          <i class="fa fa-mouse-pointer"></i>
+          <i class="fas fa-info"></i>
           <span>Posting Informasi</span></a>
 
         <a class="nav-link" href="<?php echo base_url() ?>backend/jadwal">
@@ -149,7 +149,7 @@
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="<?php echo base_url() ?>backend/login/changepassword/<?php echo $this->session->userdata('kd_user') ?>" >
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  <i class="fas fa-lock fa-sm fa-fw mr-2 text-gray-400"></i>
                   Ganti Password
                 </a>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">

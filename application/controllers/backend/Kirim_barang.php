@@ -50,6 +50,7 @@ class Kirim_barang extends CI_Controller {
 					'kd_mobil' => $this->input->post('mobil'),
 					'tanggal' => $this->input->post('tanggal'),
 					'harga' =>  $this->input->post('harga'),
+					'keterangan' =>  $this->input->post('keterangan'),
 					'kd_user'=> $kd_user
 					 );
 
@@ -66,7 +67,7 @@ class Kirim_barang extends CI_Controller {
 	}
 
 	public function cetak($id=''){
-		$data['kirim'] = $this->db->query("SELECT * FROM kirim LEFT JOIN user on kirim.kd_user = user.kd_user WHERE kd_kirim ='".$id."'")->result_array();
+		$data['kirim'] = $this->db->query("SELECT * FROM kirim LEFT JOIN user on kirim.kd_user = user.kd_user LEFT JOIN mobil on kirim.kd_mobil = mobil.kd_mobil WHERE kd_kirim ='".$id."'")->result_array();
 		$this->load->view('frontend/cetakbuktikirim', $data);
 	}
 

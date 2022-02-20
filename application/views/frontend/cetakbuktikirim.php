@@ -122,19 +122,22 @@
                 <h2><b>PO SEJAHTERA</b></h2>
                 <h4> <b>Bukti Pengiriman Barang No. <?php echo $kirim[0]['kd_kirim'];?> </b></h4>
             <pre>
-                </br>
-                Telah diterima kiriman barang : <br>
-                Berupa : <?php echo $kirim[0]['jenis_barang'];?><br>
+                <b>Telah diterima kiriman barang : </b><br>
+                Berupa : <?php echo $kirim[0]['jenis_barang'];?>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ongkos Kirim : <?php echo 'Rp '.number_format(($kirim[0]['harga'])).',-'; ?></b><br>
                 Dari : <?php echo $kirim[0]['nama_pengirim'];?><br>
                 Untuk : <?php echo $kirim[0]['nama_penerima'];?><br>
                 Tujuan : <?php echo $kirim[0]['alamat_penerima'];?><br>
                 Pada Waktu : <?php echo hari_indo(date('N',strtotime($kirim[0]['tanggal']))).', '.tanggal_indo(date('Y-m-d',strtotime(''.$kirim[0]['tanggal'].'')));?><br>
                 Telepon : <?php echo $kirim[0]['telepon'];?></br>
-                Ongkos Kirim : <?php echo 'Rp '.number_format(($kirim[0]['harga'])).',-'; ?>
+                <b>Yang membawa paket: </b> <br>
+                Sopir: <?php echo $kirim[0]['sopir_mobil'];?><br>
+                Plat Mobil: <?php echo $kirim[0]['plat_mobil'];?><br>
+                Keterangan: <?php echo $kirim[0]['keterangan'];?>
             </pre>
-            <br><br>
-            <p> Petugas loket, </p><br>
-            <p>(&nbsp; <?php echo $kirim[0]['nama_user'];?> &nbsp;)</p>
+            <br>
+            <p> Petugas loket, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yang menerima,</p><br>
+            <p>(&nbsp; <?php echo $kirim[0]['nama_user'];?> &nbsp;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</p>
 
         </td>
     </tr>

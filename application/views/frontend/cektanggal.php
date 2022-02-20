@@ -49,7 +49,7 @@
 										<select name="asal" class="form-control js-example-basic-single" required >
 											<option value="" selected disabled="">Pilih Asal</option>
 											<?php foreach ($asal as $row ) { ?>
-											<option value="<?php echo $row['kd_tujuan'] ?>"><?php echo strtoupper($row['kota_tujuan']).'['.$row['nama_terminal'].']'; ?> - <br><?php echo $row['terminal_tujuan']; ?> </option>
+											<option value="<?php echo $row['kd_tujuan'] ?>"><?php echo strtoupper($row['kota_tujuan']).'['.$row['nama_loket'].']'; ?> - <br><?php echo $row['loket_tujuan']; ?> </option>
 											<?php } ?>
 										</select>
 										<!-- </div> -->
@@ -81,14 +81,14 @@
                 <thead>
                     <tr>
                         <th style="text-align:center;width:50px;">KOTA</th>
-                        <th>Lokasi Terminal</th>
+                        <th>Lokasi Loket</th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php foreach ($list as $value) { ?>
                     <tr>
                         <td style="text-align:center;vertical-align:middle"><?php echo strtoupper($value['kota_tujuan']) ?></td>
-                        <td style="vertical-align:middle;"><?php echo $value['terminal_tujuan'] ?></td>
+                        <td style="vertical-align:middle;"><?php echo $value['loket_tujuan'] ?></td>
                     </tr>
                  <?php } ?>
                 </tbody>

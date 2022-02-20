@@ -48,7 +48,7 @@
 									<thead>
 										<tr>
 											<th scope="col">Trayek [Kode Jadwal]</th>
-											<th>Terminal Tujuan</th>
+											<th>Loket Tujuan</th>
 											<th scope="col">Hari [jam]</th>
 											<th scope="col">Kursi Tersedia</th>
 											<th>Harga</th>
@@ -59,7 +59,7 @@
 										<?php for ($i=0; $i < count($jadwal)  ; $i++) { ?>
 										<tr>
 											<td><?php echo strtoupper($asal['kota_tujuan'])." - ".strtoupper($jadwal[$i]['kota_tujuan'])." [".$jadwal[$i]['kd_jadwal']."]"; ?></td>
-											<td><?php echo '['.$jadwal[$i]['nama_terminal'].']'.$jadwal[$i]['terminal_tujuan'] ?></td>
+											<td><?php echo '['.$jadwal[$i]['nama_loket'].']'.$jadwal[$i]['loket_tujuan'] ?></td>
 											<td><?php echo hari_indo(date('N',strtotime($tanggal))).', '.tanggal_indo(date('Y-m-d',strtotime(''.$tanggal.''))).', '.date('H:i',strtotime($jadwal[$i]['jam_berangkat_jadwal'])); ?></td>
 											<td><?php echo $jadwal[$i]['kapasitas_mobil']-$kursi[$i][0]['count(no_kursi_order)'] ?></td>
 											<td>Rp <?php echo number_format((float)($jadwal[$i]['harga_jadwal']),0,",","."); ?>,-</td>

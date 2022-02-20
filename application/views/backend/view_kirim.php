@@ -124,6 +124,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                 <p>Tanggal : <b> <?php echo $kirim['tanggal']?></b></p>
                   <p>Harga : <b>Rp <?php echo $kirim['harga']; ?></b></p>
                   <p>Created Admin : <b> <?php echo $kirim['nama_user']; ?></b></p>
+                  <p>Keterangan : <b> <?php echo $kirim['keterangan']; ?></b></p>
                 </div>                   
                   </div>
                 

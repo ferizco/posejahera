@@ -68,6 +68,10 @@
                     <label  class="">Harga</label>
                     <input type="number" class="form-control" name="harga" required="" placeholder="Harga">
                   </div>
+                  <div class="form-group">
+                    <label  class="">Keterangan</label>
+                    <input type="number" class="form-control" name="harga" required="" placeholder="Ambil diloket/Diantar ke tujuan">
+                  </div>
                 </div>
               </div>
               <hr>

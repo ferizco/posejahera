@@ -39,8 +39,8 @@
 									<li>► Jurusan <b><?php echo $asal['kota_tujuan']." - ".$jadwal['kota_tujuan']." [".$jadwal['kd_jadwal']."]"; ?></b></li>
 									<li>► Armada  <b><?php echo $jadwal['nama_mobil'];  ?></b></li>
 									<li>► Plat Mobil  <b><?php echo $jadwal['plat_mobil'];  ?></b></li>
-									<li>► Berangkat dari <b><?php echo strtoupper($asal['kota_tujuan'])." - ".$asal['terminal_tujuan']; ?></b></li>
-									<li>► Turun di <b><?php echo strtoupper($jadwal['kota_tujuan'])." - ".$jadwal['terminal_tujuan']; ?></b></li>
+									<li>► Berangkat dari <b><?php echo strtoupper($asal['kota_tujuan'])." - ".$asal['loket_tujuan']; ?></b></li>
+									<li>► Turun di <b><?php echo strtoupper($jadwal['kota_tujuan'])." - ".$jadwal['loket_tujuan']; ?></b></li>
 									<li>► Harga tiket: <b>Rp <?php echo number_format((float)($jadwal['harga_jadwal']),0,",",".") ; ?>,-</b></li>
 									<li>► Berangkat hari <b><?php echo nama_hari($tanggal).",".tgl_indo($tanggal) ?></b></li>
 									<li>► Jam keberangkatan <b>pukul <?php echo $jadwal['jam_berangkat_jadwal']; ?> WIB</b></li>

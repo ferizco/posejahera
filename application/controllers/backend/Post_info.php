@@ -45,10 +45,31 @@ class Post_info extends CI_Controller {
 		redirect('backend/post_info');
     }
 
+	public function editinfo($id=''){
+		$id = $this->input->post('kode');
+		$kd_user = $this->session->userdata('kd_user');
+		$where = array('kd_info' => $id );
+		$update = array(
+			'judul'			=> $this->input->post('judul'),
+			'subjudul'  => $this->input->post('subjudul'),
+			'konten'	    	=> $this->input->post('konten'),
+			'kd_user'		=> $kd_user
+			 );
+		$this->db->update('informasi', $update, $where);
+		$this->session->set_flashdata('message', 'swal("Berhasil", "Informasi telah diedit", "success");');
+		redirect('backend/post_info');
+	}
+
     public function viewtambahinfo($value=''){
 		$data['title'] = "Tambah Informasi";
 		$data['post'] = $this->db->query("SELECT * FROM informasi ORDER BY kd_info asc")->result_array();
 		$this->load->view('backend/tambahinfo', $data);
+	}
+
+	public function vieweditinfo($id=''){
+		$data['title'] = "Edit Informasi";
+		$data['post'] = $this->db->query("SELECT * FROM informasi WHERE kd_info LIKE '".$id."'")->row_array();
+		$this->load->view('backend/editinfo', $data);
 	}
 
 	 public function showinfo($id=''){

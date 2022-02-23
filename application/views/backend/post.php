@@ -29,7 +29,7 @@
 					<tr>
 						<th>Title</th>
 						<th>Created by Admin</th>
-						<th style="width: 18%;" class="text-center">Status</th>
+						<th style="width: 22%;" class="text-center">Status</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -45,6 +45,7 @@
 						<td>
 							<div class="action">
 								<a href="<?php echo base_url('backend/post_info/showinfo/'.$row['kd_info'])?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
+								<a href="<?php echo base_url('backend/post_info/vieweditinfo/'.$row['kd_info'])?>" class="btn btn-warning"  role="button">Edit</a>
 								<a href="#" 
 									data-delete-url="<?php echo base_url('backend/post_info/delete/'.$row['kd_info'])?>" 
 									class="btn btn-danger" 

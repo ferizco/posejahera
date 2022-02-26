@@ -35,7 +35,7 @@
                 <input type="hidden" class="form-control" name="kd_tiket[]" value="<?php echo $row['kd_tiket'] ?>" readonly>
                 <div class="col-sm-6">
                   <label >Kode Tiket <b><?php echo $row['kd_tiket'] ?></b></label>
-                  <p>Nama Pemesan <b><?php echo $row['nama_order']; ?></b></p>
+                  <p>Nama Pemesan <b><?php echo $row['nama_order']; ?> <?php echo $row['no_tlpn_order']; ?></b></p>
                   <hr>
                   <div class="row form-group">
                     <label for="nama" class="col-sm-4 control-label">Kode Jadwal</label>

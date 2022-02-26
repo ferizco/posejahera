@@ -6,6 +6,7 @@ class Order_tiket extends CI_Controller {
 	parent::__construct();
 		$this->load->helper('tglindo_helper');
 		$this->load->model('getkod_model');
+		$this->load->model('order_model');
 		$this->getsecurity();
 		date_default_timezone_set("Asia/Jakarta");
 	}
@@ -19,7 +20,7 @@ class Order_tiket extends CI_Controller {
 
 	public function index(){
 		$data['title'] = "List Order";
- 		$data['order'] = $this->db->query("SELECT * FROM order_tiket group by kd_order")->result_array();
+ 		$data['order'] = $this->db->query("SELECT * FROM order_tiket group by kd_order desc")->result_array();
 		$this->load->view('backend/order', $data);
 	}
 
@@ -76,6 +77,19 @@ class Order_tiket extends CI_Controller {
 		}
 	    $this->session->set_flashdata('message', 'swal("Berhasil", "Tiket Order Berhasil Di Proses", "success");');
 		redirect('backend/order_tiket');
+	}
+
+	public function delete($id = null)
+	{
+		if (!$id) {
+			show_404();
+		}
+
+		$deleted = $this->order_model->delete($id);
+		if ($deleted) {
+			$this->session->set_flashdata('message', 'swal("Berhasil", "Pesanan Dibatalkan", "success");');
+			redirect('backend/order_tiket');
+		}
 	}
 
 }

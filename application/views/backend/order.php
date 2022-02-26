@@ -33,7 +33,7 @@
                   <th>Tanggal Beli</th>
                   <th>Jumlah Tiket</th>
                   <th>Status</th>
-                  <th>Aksi</th>
+                  <th style="width:130px" >Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -52,7 +52,15 @@
                           <?php } elseif($row['status_order'] == '2') { ?>
                           <td class="btn-success"> Sudah Bayar</td>
                         <?php } ?>
-                    <td><a href="<?php echo base_url('backend/order_tiket/vieworder/'.$row['kd_order']) ?>" class="btn btn btn-primary">View</a></td>
+                    <td><a href="<?php echo base_url('backend/order_tiket/vieworder/'.$row['kd_order']) ?>" class="btn btn btn-info">View</a>
+                    <?php if($row['status_order'] == '1') { ?>
+                      <a href="#" 
+                      data-delete-url="<?php echo base_url('backend/order_tiket/delete/'.$row['id_order'])?>" 
+                      class="btn btn-danger" 
+                      role="button"
+                      onclick="deleteConfirm(this)">Cancel</a>
+                    <?php } ?>
+                  </td>
                   </tr>
                 <?php } ?>
             </tbody>
@@ -78,5 +86,24 @@
 </a>
 <!-- js -->
 <?php $this->load->view('backend/include/base_js'); ?>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		function deleteConfirm(event){
+			Swal.fire({
+				title: 'Cancel Order Confirmation!',
+				text: 'Apakah yakin akan membatalkan pesanan ini?',
+				icon: 'warning',
+				showCancelButton: true,
+				cancelButtonText: 'No',
+				confirmButtonText: 'Yes Cancel',
+				confirmButtonColor: 'red'
+			}).then(dialog => {
+				if(dialog.isConfirmed){
+					window.location.assign(event.dataset.deleteUrl);
+				}
+			});
+		}
+	</script>
 </body>
 </html>

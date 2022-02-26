@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -108,7 +108,7 @@
 														<hr>
 														<div class='form-group'>
 														<a href='javascript:history.back()' class='btn btn-default pull-left'>Kembali</a>
-														<button class="btn btn-primary pull-right">Proses Tiket</button>
+														<button class="btn btn-info pull-right">Proses Tiket</button>
 													</div>
 												</form>
 													</div>

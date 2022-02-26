@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -43,7 +43,7 @@
 									<?php } ?>
 									<hr>
 									<?php if ($row['status_order'] == '1') { ?>
-									<a href="<?php echo base_url('tiket/payment/'.$row['kd_order']) ?>" class="btn btn-primary">Cek Pembayaran</a>
+									<a href="<?php echo base_url('tiket/payment/'.$row['kd_order']) ?>" class="btn btn-info">Cek Pembayaran</a>
 									<?php }else{ ?>
 									<a href="<?php echo base_url('assets/backend/upload/etiket/'.$row['kd_order'].'.pdf') ?>" class="btn btn-success pull-right" download>Cetak Tiket</a>
 									<?php } ?>

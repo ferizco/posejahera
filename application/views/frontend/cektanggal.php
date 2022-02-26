@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title><?php echo $title ?></title>
+		<title>PO Sejahtera</title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/frontend/datepicker/dcalendar.picker.css">
@@ -34,9 +34,9 @@
 								<i class="fa fa-search"></i> Cari Tiket
 							</div>
 							<div class="card-body">
-								<div class="alert alert-primary" role="alert">
+								<div class="alert alert-info" role="alert">
 									<p><b>PENTING!!</b></p>
-									<P>Sebelum Membeli Tiket Harap Baca terlebih Dahulu <b><i data-toggle="modal" data-target="#exampleModal" >Cara Pemesanan</i></b></P>
+									<P>Sebelum Membeli Harap Baca terlebih Dahulu <b><i data-toggle="modal" data-target="#exampleModal" >Cara Memesan Tiket</i></b></P>
 								</div>
 								<form action="<?php echo base_url() ?>tiket/cekjadwal?>" method="get">
 									<div class="form-group">
@@ -65,8 +65,8 @@
 										</select>
 										<!-- </div> -->
 									</div>
-									<a href="<?php echo base_url() ?>home" class="btn btn-primary pull-left">Kembali </a>
-									<button type="submit" class="btn btn-primary pull-right">Cari </button>
+									<a href="<?php echo base_url() ?>home" class="btn btn-info pull-left">Kembali </a>
+									<button type="submit" class="btn btn-info pull-right">Cari </button>
 								</form>
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 					<div class="col-lg-8">
 						<div class="card mb-10">
 							<div class="card-header">
-								<i class="fa fa-info"></i> Info Terminal
+								<i class="fa fa-info"></i> Info Loket
 							</div>
 							<div class="card-body">
 								<table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">

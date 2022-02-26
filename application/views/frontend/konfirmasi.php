@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -65,7 +65,7 @@
 										<label for="exampleInputEmail1">Upload Poto Transaksi</label>
 										<input type="file" class="form-control" name="userfile" required="">
 									</div>
-									<button type="submit" class="btn btn-primary pull-right">Konfirmasi </button>
+									<button type="submit" class="btn btn-info pull-right">Konfirmasi </button>
 								</form>
 					  </div>
 					</div>

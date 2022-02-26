@@ -11,7 +11,7 @@
 			</div>
 			<div class="col-lg-4  col-md-4 col-sm-4">
 				<div class="single-footer-widget">
-					<h4 class="text-white mt-1">Contact Us</h4>
+					<h4 class="text-white mt-1">Hubungi Kami</h4>
 					<p>
 						Loket Lahat
 					</p>

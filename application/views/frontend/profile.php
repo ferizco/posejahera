@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -112,7 +112,7 @@
 									</div>
 								</div>
 									<button class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-									<button type="submit" class="btn btn-primary" >Simpan Perubahan</button>
+									<button type="submit" class="btn btn-info" >Simpan Perubahan</button>
 							</form>
 						</div>
 					</div>

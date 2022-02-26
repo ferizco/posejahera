@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -81,7 +81,7 @@
 										</div>
 									</div>
 									<?php echo form_error('password1'),'<small class="text-danger pl-3">','</small>'; ?>
-									<button class="btn btn-primary btn-block">Daftar</button>
+									<button class="btn btn-info btn-block">Daftar</button>
 								</form>
 								<div class="text-center">
 									<p><a class="d-block small mt-3" href="<?php echo base_url() ?>login">Login Page</a></p>

@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -63,13 +63,13 @@
 											<td><?php echo hari_indo(date('N',strtotime($tanggal))).', '.tanggal_indo(date('Y-m-d',strtotime(''.$tanggal.''))).', '.date('H:i',strtotime($jadwal[$i]['jam_berangkat_jadwal'])); ?></td>
 											<td><?php echo $jadwal[$i]['kapasitas_mobil']-$kursi[$i][0]['count(no_kursi_order)'] ?></td>
 											<td>Rp <?php echo number_format((float)($jadwal[$i]['harga_jadwal']),0,",","."); ?>,-</td>
-											<td><a href="<?php echo base_url('tiket/beforebeli/').$jadwal[$i]['kd_jadwal'].'/'.$asal['kd_tujuan'].'/'.$tanggal ?>" class=" btn btn-primary">Pilih</a></td>
+											<td><a href="<?php echo base_url('tiket/beforebeli/').$jadwal[$i]['kd_jadwal'].'/'.$asal['kd_tujuan'].'/'.$tanggal ?>" class=" btn btn-info">Pilih</a></td>
 										</tr>
 										<?php } ?>
 									</tbody>
 								</table>
 								</div>
-								<a href="<?php echo base_url('') ?>" class="btn btn-primary pull-left">Kembali </a>
+								<a href="<?php echo base_url('') ?>" class="btn btn-info pull-left">Kembali </a>
 									</div>
 								</div>
 							</div>

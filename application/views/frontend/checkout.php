@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->		<!-- Author Meta -->
 
@@ -37,8 +37,8 @@
 					  	<p class="card-text">Kode Pemesanan Tiket :</p>
 					    <h1 class="card-title"><b><?php echo $tiket; ?></b></h1>
 					    <p><img src="<?php echo base_url('assets/frontend/upload/qrcode/'.$tiket) ?>.png"></p>
-					    	<a href="<?php echo base_url('assets/frontend/upload/qrcode/'.$tiket) ?>.png" class="btn btn-primary" download>Download QrCode</a> 
-					    	<a href="<?php echo base_url('tiket/payment/'.$tiket) ?>" class="btn btn-primary">Cek Pembayaran</a>
+					    	<a href="<?php echo base_url('assets/frontend/upload/qrcode/'.$tiket) ?>.png" class="btn btn-info" download>Download QrCode</a> 
+					    	<a href="<?php echo base_url('tiket/payment/'.$tiket) ?>" class="btn btn-info">Cek Pembayaran</a>
 					    <br>
 					    <p class="card-text">Mohon Simpan Kode Pemesanan Dan QrCode Anda Untuk Menlanjutkan Proses Pembayaran.</p>
 					  </div>

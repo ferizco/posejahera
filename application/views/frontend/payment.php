@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -97,14 +97,14 @@
 								<div class="col-14 mt-15 mb-15">
 									<hr>
 									<div class="col-md-8 mt-sm-30">
-										<h3 class="mb-20">PANDUAN PEMBAYARAN</h3>
+										<h3 class="mb-20">PEMBAYARAN MELALUI ATM</h3>
 										<div class="">
 											<ol class="ordered-list" align="left">
 												<li>Masukkan Kartu ATM <?php echo $tiket[0]['nama_bank']; ?> Anda</li>
 												<li>Masukan PIN ATM Anda</li>
 												<li>Pilih Menu Transaksi Lainnya</li>
 												<li>Pilih menu Transfer dan Ke Rek <?php echo $tiket[0]['nama_bank']; ?></li>
-												<li>Masukkan no rekening <?php echo $tiket[0]['nama_bank']; ?> yang dituju</li>
+												<li>Masukkan no rekening <?php echo $tiket[0]['no_rek_bank']; ?> </li>
 												<li>Masukkan Nominal Jumlah Uang yang akan di transfer</li>
 												<li>Layar ATM akan menampilkan data transaksi anda ,</li>
 												<li>Jika data sudah benar pilih “YA” (OK)</li>
@@ -114,7 +114,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="<?php echo base_url('tiket/konfirmasi/'.$tiket[0]['kd_order'].'/'.$total) ?>" class="btn btn-primary pull-center">Konfirmasi Pembayaran </a>
+								<a href="<?php echo base_url('tiket/konfirmasi/'.$tiket[0]['kd_order'].'/'.$total) ?>" class="btn btn-info pull-center">Konfirmasi Pembayaran </a>
 							</div>
 						</div>
 					</div>
@@ -143,7 +143,7 @@
 				var distance = countDownDate - now;
 				// Time calculations for days, hours, minutes and seconds
 				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 12)) / (1000 * 60 * 60));
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 				// Output the result in an element with id="demo"

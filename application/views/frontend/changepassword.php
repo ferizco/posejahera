@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -66,7 +66,7 @@
 										</div>
 									  </div>
 									<a class="btn btn-secondary" href="<?php echo base_url() ?>profile/profilesaya/<?php echo $this->session->userdata('kd_pelanggan') ?>">Kembali</a>
-									<button type="submit" class="btn btn-primary pull-right" >Ganti Password</button>
+									<button type="submit" class="btn btn-info pull-right" >Ganti Password</button>
 									</form>
 								</div>
 							</div>

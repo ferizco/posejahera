@@ -71,7 +71,7 @@
 			</td>
 			<td class='btn-group' width='139'>
 				<!--=================================================START 3C=========================================================-->
-				<label class='btn btn-primary'>
+				<label class='mt-2 btn btn-info'>
 					<a value='' autocomplete='off' disabled='disabled'>SUPIR</a>
 				</label>
 			</td>
@@ -119,11 +119,11 @@
 						<div class="card-header">
 							<i class="fa fa-user"></i> Konfirmasi Pemesanan
 						</div>
-						<div class="alert alert-primary" role="alert">
+						<div class="alert alert-info" role="alert">
 							<p>Setelah memilih kursi, silahkan klik tombol 'selanjutnya' dibawah ini !</p>
 							<div class='btn-group'>
 								<a href="<?php echo base_url('tiket/cekjadwal/'.$tanggal.'/'.$asal['kd_tujuan'].'/'.$jadwal['kota_tujuan']) ?>" class='btn btn-default'>Kembali</a>
-								<input class="btn btn-primary pull-right" disabled="disabled" type="submit" value="Selanjutnya">
+								<input class="btn btn-info pull-right" disabled="disabled" type="submit" value="Selanjutnya">
 								
 							</div>
 						</div>

@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -82,7 +82,7 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-6">
 						<div class="single-service">
-							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/a1.png" width="100" height="100" alt="">
+							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/b1.png" width="100" height="100" alt="">
 							<h4>Langkah Pertama Pilih Tiket
 							</h4>
 							<p>
@@ -92,7 +92,7 @@
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-service">
-							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/a3.png" width="100" height="100" alt="">
+							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/b2.png" width="100" height="100" alt="">
 							<h4>Langkah Kedua Pilih Mobil dan Tempat Duduk</h4>
 							<p>
 								Pilih Mobil, tempat duduk, tempat keberangkatan, tujuan, isi rincian penumpang dan klik 'Pembayaran'
@@ -101,7 +101,7 @@
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-service">
-							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/a2.png" width="100" height="100" alt="">
+							<img class="img-fluid" src="<?php echo base_url() ?>assets/frontend/img/b3.png" width="100" height="100" alt="">
 							<h4>Langkah Ketiga Lakukan Pembayaran</h4>
 							<p>
 								Pembayaran dapat dilakukan melalui transfer ATM atau Internet banking.

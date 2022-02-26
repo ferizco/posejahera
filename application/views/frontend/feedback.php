@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="shortcut icon" href="assets/img/logomobil.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -57,7 +57,7 @@
 											<textarea class="form-control" name="pesan" required=""><?php echo set_value('pesan') ?></textarea>
 										</div>
 									</div>
-									<button class="btn btn-primary btn-block">Kirim</button>
+									<button class="btn btn-info btn-block">Kirim</button>
 								</form>
 								
 							</div>

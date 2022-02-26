@@ -69,7 +69,7 @@
 									</tbody>
 								</table>
 								</div>
-								<a href="<?php echo base_url('') ?>" class="btn btn-info pull-left">Kembali </a>
+								<a href="<?php echo base_url() ?>tiket" class="btn btn-info pull-left">Kembali </a>
 									</div>
 								</div>
 							</div>

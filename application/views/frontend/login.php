@@ -30,7 +30,7 @@
         <div class="wrap-login100">
           <div
             class="login100-form-title"
-            style="background-image: url(assets/frontend/img/lantrawisata.png)"
+            style="background-image:  url(assets/frontend/img/lantrawisata.png)"
           >
             <span class="login100-form-title-1"> Log In </span>
           </div>

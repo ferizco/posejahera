@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="assets/img/logobus.png">
+		<link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -64,7 +64,7 @@
 									    <input type="password" class="form-control" required="" name="new_password2" placeholder="Ulangi Password">
 										</div>
 									  </div>
-									<button type="submit" class="btn btn-primary pull-right" >Ganti Password</button>
+									<button type="submit" class="btn btn-info pull-right" >Ganti Password</button>
 									</form>
 								</div>
 							</div>

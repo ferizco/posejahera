@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title><?php echo $title ?></title>
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
+    <title>List Jadwal</title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
   </head>
@@ -19,7 +20,7 @@
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <a href="<?php echo base_url('backend/jadwal/tambahjadwal') ?>" class="btn btn-primary pull-right" >
+          <a href="<?php echo base_url('backend/jadwal/tambahjadwal') ?>" class="btn btn-info pull-right" >
           Tambah Jadwal
           </a>
         </div>
@@ -45,10 +46,10 @@
                   <td><?php echo $row['kd_jadwal']; ?></td>
                   <td><?php echo strtoupper($row['kota_tujuan']); ?></td>
                   <td><?php echo strtoupper($row['wilayah_jadwal']); ?></td>
-                  <td><?php echo date('H:i',strtotime($row['jam_berangkat_jadwal'])); ?></td>
-                  <td><?php echo date('H:i',strtotime($row['jam_tiba_jadwal'])); ?></td>
+                  <td><?php echo date('H:i',strtotime($row['jam_berangkat_jadwal']));  ?> WIB</td>
+                  <td><?php echo date('H:i',strtotime($row['jam_tiba_jadwal']));  ?> WIB </td>
                   <td>Rp <?php echo number_format((float)($row['harga_jadwal']),0,",","."); ?>,-</td>
-                  <td><a href="<?php echo base_url('backend/jadwal/viewjadwal/'.$row['kd_jadwal']) ?>" class="btn btn-primary">VIEW</a></td>
+                  <td><a href="<?php echo base_url('backend/jadwal/viewjadwal/'.$row['kd_jadwal']) ?>" class="btn btn-info">VIEW</a></td>
                 </td>
               </tr>
               <?php } ?>

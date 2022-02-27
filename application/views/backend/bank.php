@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -39,7 +40,7 @@
                   <td><?php echo $row['nama_bank']; ?></td>
                   <td><?php echo $row['no_rek_bank']; ?></td>
                   <td><?php echo $row['nasabah_bank']; ?></td>
-                  <td align="center"><a href="<?php echo base_url('backend/bank/viewbank/'.$row['kd_bank']) ?>" class="btn btn btn-primary">View</a></a>
+                  <td align="center"><a href="<?php echo base_url('backend/bank/viewbank/'.$row['kd_bank']) ?>" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
               <?php } ?>

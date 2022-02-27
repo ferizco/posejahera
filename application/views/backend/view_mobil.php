@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -108,7 +109,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <!-- Basic Card Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Kode Mobil [<?php echo $mobil['kd_mobil']; ?>]  </h6>
+          <h6 class="m-0 font-weight-bold text-info">Kode Mobil [<?php echo $mobil['kd_mobil']; ?>]  </h6>
         </div>
         <div class="card-body">             
             <div class="card-body">
@@ -145,31 +146,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <?php $this->load->view('backend/include/base_footer'); ?>
   <!-- End of Footer -->
 <!-- js -->
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
 <?php $this->load->view('backend/include/base_js'); ?>
-
-
-       
+      
 </body>
 </html>

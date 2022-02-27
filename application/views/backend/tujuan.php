@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -19,7 +20,7 @@
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#ModalTujuan">
+          <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#ModalTujuan">
           Tambah Tujuan
           </button>
         </div>
@@ -44,7 +45,7 @@
                   <td><?php echo strtoupper($row['kota_tujuan']); ?></td>
                   <td><?php echo  substr($row['loket_tujuan'], 0, 90); ?></td>
                   <td><?php echo  substr($row['nama_loket'], 0, 90); ?></td>
-                  <td align="center"><a href="<?php echo base_url('backend/tujuan/viewtujuan/'.$row['kd_tujuan']) ?>" class="btn btn-primary">VIEW</a></td>
+                  <td align="center"><a href="<?php echo base_url('backend/tujuan/viewtujuan/'.$row['kd_tujuan']) ?>" class="btn btn-info">VIEW</a></td>
                 </tr>
                 <?php } ?>
               </tbody>
@@ -96,7 +97,7 @@
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary">Tambah</button>
+        <button class="btn btn-info">Tambah</button>
       </div>
       </form>
     </div>

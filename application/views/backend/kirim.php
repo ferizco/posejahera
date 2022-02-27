@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -19,7 +20,7 @@
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-           <a href="<?php echo base_url('backend/kirim_barang/viewtambahpengiriman') ?>" class="btn btn-primary pull-right" >
+           <a href="<?php echo base_url('backend/kirim_barang/viewtambahpengiriman') ?>" class="btn btn-info pull-right" >
           Tambah Pengiriman
           </a>
         </div>
@@ -48,7 +49,7 @@
                   <td><?php echo $row['alamat_penerima'] ?></td>
                   <td><?php echo $row['jenis_barang'] ?></td>
                   <td><a>Rp <?php echo $row['harga'] ?></a></td>
-                  <td align="center"><a href="<?php echo base_url('backend/kirim_barang/viewkirim/'.$row['kd_kirim'])?>" class="btn btn btn-primary">View</a></a>
+                  <td align="center"><a href="<?php echo base_url('backend/kirim_barang/viewkirim/'.$row['kd_kirim'])?>" class="btn btn btn-info">View</a></a>
                   <a href="<?php echo base_url('backend/kirim_barang/cetak/'.$row['kd_kirim'])?>" class="btn btn btn-success">Cetak</a></a>
                 </td>
               </tr>

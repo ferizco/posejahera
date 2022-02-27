@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
 <title>Bukti Kirim PO Sejahtera(<?php echo $kirim[0]['kd_kirim'];?>)</title>
 
 <style type="text/css">

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -38,7 +39,7 @@
 
         
 				<div>
-					<button type="submit" name="draft" class="btn btn-primary pull-rigth mt-2" value="false">Publish</button>
+					<button type="submit" name="draft" class="btn btn-info pull-rigth mt-2" value="false">Publish</button>
 					<div class="invalid-feedback">
 						<?= form_error('draft') ?>
 					</div>

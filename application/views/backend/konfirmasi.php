@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -16,11 +16,10 @@
     <?php $this->load->view('backend/include/base_nav'); ?>
     <!-- Begin Page Content -->
     <div class="container-fluid">
-      <h1 class="h3 mb-2 text-gray-800">List Tiket</h1>
+      <h1 class="h3 mb-2 text-gray-800">List Konfirmasi</h1>
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
-        <div class="card-header py-3">
-        </div>
+        
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -46,7 +45,7 @@
                     <td><?php echo $row['nama_bank_konfirmasi']; ?></td>
                     <td><?php echo $row['norek_konfirmasi']; ?></td>
                     <td><?php echo $row['total_konfirmasi']; ?></td>
-                    <td><a href="<?php echo base_url('backend/konfirmasi/viewkonfirmasi/'.$row['kd_order']) ?>" class="btn btn btn-primary">View</a></td>
+                    <td><a href="<?php echo base_url('backend/konfirmasi/viewkonfirmasi/'.$row['kd_order']) ?>" class="btn btn btn-info">View</a></td>
                   </tr>
                 <?php } ?>
             </tbody>

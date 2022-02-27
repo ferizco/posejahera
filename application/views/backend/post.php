@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -19,7 +20,7 @@
       <h1 class="h3 mb-2 text-gray-800">List Informasi</h1>
 
 		<div class="card-header py-3">
-          <a href="<?php echo base_url()?>backend/post_info/viewtambahinfo" class="btn btn-primary pull-right" >
+          <a href="<?php echo base_url()?>backend/post_info/viewtambahinfo" class="btn btn-info pull-right" >
           + Tambah Informasi
           </a>
         </div>
@@ -29,7 +30,7 @@
 					<tr>
 						<th>Title</th>
 						<th>Created by Admin</th>
-						<th style="width: 22%;" class="text-center">Status</th>
+						<th style="width: 22%;" class="text-center">Aksi</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -44,8 +45,8 @@
 						</td>
 						<td>
 							<div class="action">
-								<a href="<?php echo base_url('backend/post_info/showinfo/'.$row['kd_info'])?>" class="btn btn-primary" target="_blank" role="button">Preview</a>
-								<a href="<?php echo base_url('backend/post_info/vieweditinfo/'.$row['kd_info'])?>" class="btn btn-warning"  role="button">Edit</a>
+								<a href="<?php echo base_url('backend/post_info/showinfo/'.$row['kd_info'])?>" class="btn btn-info" target="_blank" role="button">Preview</a>
+								<a href="<?php echo base_url('backend/post_info/vieweditinfo/'.$row['kd_info'])?>" class="btn btn-success"  role="button">Edit</a>
 								<a href="#" 
 									data-delete-url="<?php echo base_url('backend/post_info/delete/'.$row['kd_info'])?>" 
 									class="btn btn-danger" 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <meta name="author" content="">
     <title><?php echo $title ?></title>
     <!-- css -->
@@ -40,9 +41,9 @@
                     <td><?php echo $row['username_user']; ?></td>
                     <td><?php echo $row['email_user']; ?></td>
                     <td><?php if ($row['level_user'] == '1') { ?>
-                      <p class="btn btn-primary">Pimpinan</p>
+                      <p class="btn btn-info">Pimpinan</p>
                     <?php }else{ ?>
-                      <p class="btn btn-primary">Admin</p>
+                      <p class="btn btn-success">Admin</p>
                     <?php } ?>
                     </td>
                   </tr>

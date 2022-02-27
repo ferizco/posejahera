@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/timepicker') ?>/css/bootstrap-material-datetimepicker.css" />
@@ -20,7 +21,7 @@
       <!-- Basic Card Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Tambah Pengiriman</h6>
+          <h6 class="m-0 font-weight-bold text-info">Tambah Pengiriman</h6>
         </div>
         <div class="card-body">
           <div class="card-body">
@@ -69,14 +70,17 @@
                     <input type="number" class="form-control" name="harga" required="" placeholder="Harga">
                   </div>
                   <div class="form-group">
-                    <label  class="">Keterangan</label>
-                    <input type="number" class="form-control" name="harga" required="" placeholder="Ambil diloket/Diantar ke tujuan">
-                  </div>
+                  <label  class="">Keterangan</label>
+                  <select class="form-control" name="keterangan">
+                    <option value="Diantar ke Tujuan">Diantar</option>
+                    <option value="Ambil di Loket">Ambil Sendiri</option>
+                  </select>
+                </div>
                 </div>
               </div>
               <hr>
               <a class="btn btn-default" href="javascript:history.back()"> Kembali</a>
-              <input  type="submit" class="btn btn-primary pull-rigth" value="Tambah Pengiriman">
+              <input  type="submit" class="btn btn-info pull-rigth" value="Tambah Pengiriman">
             </form>
           </div>
         </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/logobus.png">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -109,7 +109,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <!-- Basic Card Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Kode Tujuan [<?php echo $rute['kd_tujuan']; ?>]  </h6>
+          <h6 class="m-0 font-weight-bold text-info">Kode Tujuan [<?php echo $rute['kd_tujuan']; ?>]  </h6>
         </div>
         <div class="card-body">             
             <div class="card-body">

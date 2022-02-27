@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/timepicker') ?>/css/bootstrap-material-datetimepicker.css" />
@@ -20,7 +21,7 @@
       <!-- Basic Card Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Tambah Jadwal</h6>
+          <h6 class="m-0 font-weight-bold text-info">Tambah Jadwal</h6>
         </div>
         <div class="card-body">
           <div class="card-body">
@@ -32,7 +33,7 @@
                     <select class="form-control" name="asal" required>
                       <option value="" selected disabled="">-Pilih Asal-</option>
                       <?php foreach ($tujuan as $row ) {?>
-                      <option value="<?php echo $row['kd_tujuan'] ?>" ><?php echo strtoupper($row['kota_tujuan'])." - ".$row['terminal_tujuan']; ?></option>
+                      <option value="<?php echo $row['kd_tujuan'] ?>" ><?php echo strtoupper($row['kota_tujuan'])." - ".$row['loket_tujuan']; ?></option>
                       <?php } ?>
                     </select>
                   </div>
@@ -41,7 +42,7 @@
                     <select class="form-control" name="tujuan" required>
                       <option value="" selected disabled="">-Pilih Tujuan-</option>
                       <?php foreach ($tujuan as $row ) {?>
-                      <option value="<?php echo $row['kd_tujuan'] ?>" ><?php echo strtoupper($row['kota_tujuan'])." - ".$row['terminal_tujuan']; ?></option>
+                      <option value="<?php echo $row['kd_tujuan'] ?>" ><?php echo strtoupper($row['kota_tujuan'])." - ".$row['loket_tujuan']; ?></option>
                       <?php } ?>
                     </select>
                   </div>
@@ -75,7 +76,7 @@
               </div>
               <hr>
               <a class="btn btn-default" href="javascript:history.back()"> Kembali</a>
-              <input  type="submit" class="btn btn-primary pull-rigth" value="Tambah Jadwal">
+              <input  type="submit" class="btn btn-info pull-rigth" value="Tambah Jadwal">
             </form>
           </div>
         </div>

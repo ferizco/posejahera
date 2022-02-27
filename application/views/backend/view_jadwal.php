@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -108,7 +109,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <!-- Basic Card Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">Kode Jadwal [<?php echo $jadwal['kd_jadwal']; ?>]  </h6>
+          <h6 class="m-0 font-weight-bold text-info">Kode Jadwal [<?php echo $jadwal['kd_jadwal']; ?>]  </h6>
         </div>
         <div class="card-body">             
             <div class="card-body">
@@ -126,7 +127,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             </div>
             <hr>
             <a class="btn btn-default" href="javascript:history.back()"> Kembali</a>
-            <button data-toggle="modal" data-target="#edit" class="btn btn-primary pull-rigth">Edit Harga</button>
+            <button data-toggle="modal" data-target="#edit" class="btn btn-info pull-rigth">Edit Harga</button>
           </div>
       </div>
     </div>
@@ -190,7 +191,7 @@ span.onclick = function() {
 										</div>
 									</div>
 								</div>
-									<button type="submit" class="btn btn-primary" >Simpan Perubahan</button>
+									<button type="submit" class="btn btn-info" >Simpan Perubahan</button>
 							</form>
 						</div>
 					</div>

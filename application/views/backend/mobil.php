@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url()?>/assets/backend/img/logomobil.png" type="image/gif">
     <title><?php echo $title ?></title>
     <!-- css -->
     <?php $this->load->view('backend/include/base_css'); ?>
@@ -19,7 +20,7 @@
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
         <div class="card-header py-3">
-          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#ModalTujuan">
+          <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#ModalTujuan">
           Tambah Mobil
           </button>
         </div>
@@ -52,7 +53,7 @@
                     <?php } else { ?>
                     <td class="btn-danger">Offline</td>
                   <?php } ?>
-                  <td align="center"><a href="<?php echo base_url('backend/mobil/viewmobil/'.$row['kd_mobil'])?>" class="btn btn btn-primary">View</a></a>
+                  <td align="center"><a href="<?php echo base_url('backend/mobil/viewmobil/'.$row['kd_mobil'])?>" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
               <?php } ?>

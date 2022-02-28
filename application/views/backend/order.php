@@ -61,6 +61,9 @@
                       role="button"
                       onclick="deleteConfirm(this)">Cancel</a>
                     <?php } ?>
+                     <?php if($row['status_order'] == '2') { ?>
+                      <a class="btn btn-success" href="<?php echo base_url('assets/backend/upload/etiket/'.$row['kd_order'].'.pdf') ?>"> Cetak</a>
+                       <?php } ?>
                   </td>
                   </tr>
                 <?php } ?>

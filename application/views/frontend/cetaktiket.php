@@ -95,8 +95,8 @@
                 Nama Pemesan : <?php echo $cetak[0]['nama_order'];?></br>
                 Jadwal : <?php echo hari_indo(date('N',strtotime($cetak[0]['tgl_berangkat_order']))).', '.tanggal_indo(date('Y-m-d',strtotime(''.$cetak[0]['tgl_berangkat_order'].'')));?><br>
                 Jam Berangkat : <?php echo date('H:i',strtotime($cetak[0]['jam_berangkat_jadwal']))?></br>
-                Berangkat Dari : <?php echo $asal['nama_terminal'].'-'.strtoupper($asal['kota_tujuan']);?></br>
-                Tujuan Ke : <?php echo $cetak[0]['nama_terminal'].' - '.strtoupper($cetak[0]['kota_tujuan']); ?>
+                Berangkat Dari : <?php echo $asal['nama_loket'].'-'.strtoupper($asal['kota_tujuan']);?></br>
+                Tujuan Ke : <?php echo $cetak[0]['nama_loket'].' - '.strtoupper($cetak[0]['kota_tujuan']); ?>
             </pre>
         </td>
     </tr>

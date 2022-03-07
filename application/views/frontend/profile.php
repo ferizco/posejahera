@@ -33,10 +33,13 @@
 	<body>
 		<!-- navbar -->
 		<?php $this->load->view('frontend/include/base_nav'); ?>
-		<section class="generic-banner relative">
+		<section class="service-area relative">
+			<div class="overlay overlay-bg"></div>
 			<div class="container">
 				<div class="section-top-border">
-					<h3 class="mb-30" align="center">Profile Saya</h3>
+					<div class="col pb-40 text-center header-text">
+				<h1>Profile <?php echo $this->session->userdata('nama_lengkap'); ?> </h1>
+				</div>
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-6">
 							<!-- Default Card Example -->

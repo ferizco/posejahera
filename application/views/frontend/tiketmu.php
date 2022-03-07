@@ -24,7 +24,7 @@
 		<?php $this->load->view('frontend/include/base_nav'); ?>
 		<div class="generic-banner">
 			<br>
-			<h2 class="text-white" align="center">Tiket Saya</h2>
+			<h2 class="text-white" align="center">Tiket <?php echo $this->session->userdata('nama_lengkap'); ?></h2>
 			<div class="container ">
 				<div class="row d-flex justify-content-center">
 					<?php foreach ($tiket as $row) { ?>

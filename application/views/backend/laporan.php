@@ -29,7 +29,7 @@
                 <tbody>
                     <tr>
                         <td style="text-align:center;vertical-align:middle">1</td>
-                        <td style="vertical-align:middle;">Laporan Excel Laporan Data Tiket Pertanggal</td>
+                        <td style="vertical-align:middle;">Laporan Pemesanan Tiket Pertanggal</td>
                         <td style="text-align:center;">
                         <a class="btn btn-sm btn-default" href="#lap_jual_pertanggal" data-toggle="modal">Export Excel</a>
                         </td>

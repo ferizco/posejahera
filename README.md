@@ -13,3 +13,4 @@ Pada Proyek ini menggunakan PO Sejahtera Lantra Wisata Travel sebagai studi kasu
 5. Responsive
 6. Input Informasi
 7. Input Feedback oleh pelanggan
+8. DataTables 

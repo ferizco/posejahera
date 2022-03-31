@@ -26,7 +26,7 @@
 	</div>
 	<div class="modal-body">Pilih Logout untuk mengakhiri sesi ini</div>
 	<div class="modal-footer">
-		<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+		<button class="btn btn-dark" type="button" data-dismiss="modal">Cancel</button>
 		<a class="btn btn-info" href="<?php echo base_url('backend/login/logout') ?>">Logout</a>
 	</div>
 </div>

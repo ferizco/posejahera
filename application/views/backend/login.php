@@ -165,7 +165,7 @@ label {
                     <i class="fa fa-key" aria-hidden="true"></i>
                 </div>
                 <div class="col-lg-12 login-title">
-                    ADMIN PANEL PO SEJAHTERA
+                     PANEL PO SEJAHTERA
                 </div>
 
                 <div class="col-lg-12 login-form">

@@ -1,6 +1,6 @@
 <?php
 
-class order_model extends CI_Model
+class Order_model extends CI_Model
 {
 
 	private $_table = 'order_tiket';

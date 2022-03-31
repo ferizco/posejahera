@@ -145,6 +145,12 @@
   </table>
   <br/>
   
+<script type="text/javascript">
 
+$(document).ready(function () {
+    window.print();
+});
+
+</script>
 </body>
 </html>

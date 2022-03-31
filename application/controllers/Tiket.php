@@ -114,8 +114,8 @@ class Tiket extends CI_Controller {
 		$alamat = $this->input->post('alamat');
 		$email = $this->input->post('email');
 		$bank = $this->input->post('bank');
-		$satu_hari        = mktime(0,0,0,date("n"),date("j")+1,date("Y"));
-		$expired       = date("d-m-Y", $satu_hari)." ".date('H:i:s');
+		$satu_hari        = strtotime("+6 hours");
+		$expired       = date ("d-m-Y H:i:s", $satu_hari);
 		$status 		= '1';
 		QRcode::png($getkode,'assets/frontend/upload/qrcode/'.$getkode.".png","Q", 8, 8);
 		$count = count($kursi);

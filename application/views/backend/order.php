@@ -32,7 +32,8 @@
                   <th>Tanggal Berangkat</th>
                   <th>Nama Pemesan</th>
                   <th>Tanggal Beli</th>
-                  <th>Jumlah Tiket</th>
+                  <th style="width: 1%">Jumlah Tiket</th>
+                  <th>Batas Bayar</th>
                   <th>Status</th>
                   <th style="width:130px" >Aksi</th>
                 </tr>
@@ -48,6 +49,21 @@
                     <td><?php echo $row['tgl_beli_order']; ?></td>
                     <?php $sqlcek = $this->db->query("SELECT * FROM order_tiket WHERE kd_order LIKE '".$row['kd_order']."'")->result_array(); ?>
                     <td><?php echo count($sqlcek); ?></td>
+
+                  <?php 
+                  date_default_timezone_Set("Asia/Jakarta");
+                  $b = $row['expired_order'];
+                  $now = date("d-m-Y H:i:s");
+                  $c=strtotime($b);
+                  $d=strtotime($now);
+                  if (($c < $d) and ($row['status_order'] == '2')) {?>
+                  <td class="text-success"><?php echo $row['expired_order']; ?></td>
+                  <?php } elseif ($c > $d) {?>
+                  <td><?php echo $row['expired_order']; ?></td>
+                  <?php } elseif($c < $d) { ?>
+                  <td class="text-danger">Expired</td>
+                  <?php }?>
+
                     <?php if ($row['status_order'] == '1') { ?>
                           <td class="btn-danger"> Tunggu Konfirmasi</td> 
                           <?php } elseif($row['status_order'] == '2') { ?>

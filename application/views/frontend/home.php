@@ -41,6 +41,7 @@
 						Biro Perjalanan Wisata yang Aman, Murah, dan Nyaman<br><br>				
 							</h2>
 						<a href="<?php echo base_url() ?>tiket" class="primary-btn header-btn text-uppercase">Cari Tiket Travel</a>
+						<a href="<?php echo base_url() ?>pickup" class="primary-btn header-btn text-uppercase">Pickup Paket</a>
 					</div>
 				</div>
 			</div>

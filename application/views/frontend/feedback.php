@@ -39,7 +39,7 @@
 										<div class="form-group">
 											<label for="nama">Nama</label>
 											<div class="form-label-group">
-												<input type="text" name="nama" class="form-control" required="" placeholder="Nama Kamu" value="<?php echo $this->session->userdata('nama_lengkap') ?>" readonly>
+												<input type="text" name="nama" class="form-control" required="" placeholder="Nama Anda" value="<?php echo $this->session->userdata('nama_lengkap') ?>" readonly>
 											</div>
 										</div>
 										<div class="form-group">

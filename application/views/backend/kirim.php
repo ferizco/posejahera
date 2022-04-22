@@ -50,7 +50,9 @@
                   <td><?php echo $row['jenis_barang'] ?></td>
                   <td><a>Rp <?php echo $row['harga'] ?></a></td>
                   <td align="center"><a href="<?php echo base_url('backend/kirim_barang/viewkirim/'.$row['kd_kirim'])?>" class="btn btn btn-info">View</a></a>
+                  <?php if($row['status'] == '2') { ?>
                   <a href="<?php echo base_url('backend/kirim_barang/cetak/'.$row['kd_kirim'])?>" class="btn btn btn-success">Cetak</a></a>
+                  <?php } ?>
                 </td>
               </tr>
               <?php } ?>

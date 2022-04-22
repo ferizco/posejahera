@@ -9,6 +9,7 @@
 			          <li class="menu"><a href="<?php echo base_url() ?>">Home</a></li>
 			          <li><a href="<?php echo base_url() ?>tiket">Pesan Tiket</a></li>
 			          <?php if ($this->session->userdata('username')) { ?>
+						<li class="menu"><a href="<?php echo base_url()?>pickup">Pickup Paket</a></li>
 						<li class="menu"><a href="<?php echo base_url() ?>feedback">Kritik Saran</a></li>
 				      	<li class="menu-has-children"><a href="">Hai, <?php echo $this->session->userdata('nama_lengkap'); ?></a>
 						<ul>

@@ -99,8 +99,8 @@
         <input type="number" class="form-control" id="seat" name="seat" placeholder="Jumlah Kursi">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        <button class="btn btn-info">Simpan</button>
       </div>
     </form>
   </div>

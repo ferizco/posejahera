@@ -75,7 +75,6 @@ class Post_info extends CI_Controller {
 	 public function showinfo($id=''){
 		$data['title'] = "Informasi";
 		$data['post'] = $this->db->query("SELECT * FROM informasi WHERE kd_info = '".$id."'")->row_array();
-		
 		$this->load->view('frontend/show_info', $data);
 	}
 
@@ -91,6 +90,7 @@ class Post_info extends CI_Controller {
 			redirect('backend/post_info');
 		}
 	}
+
 
 	
 }

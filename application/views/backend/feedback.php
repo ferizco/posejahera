@@ -30,6 +30,7 @@
                   <th>Email</th>
                   <th>Pesan</th>
                   <th>Tanggal Kirim</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -41,6 +42,7 @@
                   <td><?php echo $row['email']; ?></td>
                   <td><?php echo $row['pesan']; ?></td>
                   <td><?php echo $row['created_at']; ?></td>
+                  <td> <a class="btn btn-info" href="mailto:<?php echo $row['email']?>?subject= Balasan Feedback PO Sejahtera"> Kirim Email</td>
                 </td>
               </tr>
               <?php } ?>

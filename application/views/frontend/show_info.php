@@ -45,8 +45,8 @@
 			    Di Posting pada <?php echo $post['created_at'] ?>
 		    </div>
 	        </article>
-			
 			</div>
+
 
             <div class="container">
 				<div class="row">
@@ -61,7 +61,43 @@
          
 			</div>
 
+			<!-- Comment -->
+		<div class="mt-5 col-lg-10 custombox clearfix">
+			<h4 class="small-title"> Komentar </h4>
+			<?php foreach($comment as $row){ ?>
+			<div class="row mb-3 ">
+				<div class="col-lg-12">
+					<div class="comments-list">
+						<div class="media">
+							<div class="media-body">
+								<h4 class="media-heading user_name"><?php echo $row['nama']?> <small><?php echo $row['created_at']?></small></h4>
+								<p> <?php echo $row['komentar']?></p>
+								<a href="#" class="btm btn-sm">Reply</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+			</div><!-- end row -->
+			<?php }?>
+		</div><!-- end custom-box -->
+
+		<div class="mt-4 col-lg-10 custombox clearfix ">
+			<h4 class="small-title">Input Komentar</h4>
+			<div class="row">
+				<div class="col-lg-12">
+					<form  action="<?php echo base_url()?>home/addkomen" method="POST" class="form-wrapperr">
+					<input type="hidden" name="kode" value="<?php echo $post['kd_info']?>">
+						<input type="text" name="nama" class="form-control" placeholder="Nama Anda">
+						<input type="text" name="email" class="form-control" placeholder="Email ">
+						<textarea name="komentar" class="form-control" placeholder="Komentar"></textarea>
+						<button type="submit" class="btn btm btn-primary">Submit Comment</button>
+					</form>
 				</div>
+			</div>
+		</div>
+
+
+			</div>
 		</section>
         </div>
     

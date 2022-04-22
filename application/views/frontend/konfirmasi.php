@@ -40,7 +40,7 @@
 										<input type="text" id="" class="form-control" id="" name="kd_order" value="<?php echo $id ?>" placeholder="Kode Tiket">
 									</div>
 									<div class="form-group">
-										<label for="exampleInputEmail1">BANK Kamu</label>
+										<label for="exampleInputEmail1">BANK Anda</label>
 										<select class="form-control" name="bank_km">
 											<option value="" selected disabled="">Pilih Bank</option>
 											<option value="BCA" >BCA</option>

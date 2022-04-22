@@ -8,6 +8,7 @@ class Login extends CI_Controller {
 		$this->load->model('getkod_model');
 		date_default_timezone_set("Asia/Jakarta");
 	}
+	
 	function getsecurity($value=''){
 		$username = $this->session->userdata('username');
 		if ($username) {

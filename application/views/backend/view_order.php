@@ -102,7 +102,7 @@
                   <div class="row form-group">
                     <label for="" class="col-sm-4 control-label">Total Pembayaran</label>
                     <div class="col-sm-8">
-                      <p><b>Rp <?php $total =  count($tiket) * $tiket[0]['harga_jadwal']; echo number_format($total)?></b></p>
+                      <p><b>Rp <?php $total =  count($tiket) * $tiket[0]['harga_jadwal'] ; echo number_format($total)?></b></p>
                       </select>
                     </div>
                   </div>
@@ -111,9 +111,15 @@
               <hr><a class="btn btn-default" href="<?php echo base_url().'backend/order_tiket' ?>"> Kembali</a>
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<?php if ($tiket[0]['status_order'] == '1') { ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="submit"  class="btn btn-info">Proses</button>
+
+                <?php }elseif($sqlcekpoin==null){ ?>
+                  <a class="btn btn-success" href="<?php echo base_url('assets/backend/upload/etiket/'.$row['kd_order'].'.pdf') ?>"> Cetak Eticket</a>
+              <a class="btn btn-info" href="<?php echo base_url('backend/order_tiket/poinmasuk/'.$row['kd_order']) ?>"> POIN </a>
             <?php }else{ ?>
               <a class="btn btn-success" href="<?php echo base_url('assets/backend/upload/etiket/'.$row['kd_order'].'.pdf') ?>"> Cetak Eticket</a>
-                        <?php } ?>
+              
+              
+              <?php } ?>
             </div>
           </div>
         </form>

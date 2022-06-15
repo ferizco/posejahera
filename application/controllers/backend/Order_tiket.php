@@ -30,12 +30,46 @@ class Order_tiket extends CI_Controller {
 	 	if ($sqlcek) {
 	 		$data['tiket'] = $sqlcek;
 			$data['title'] = "View Order";
+			$data['sqlcekpoin'] = $this->db->query("SELECT * FROM poin_masuk WHERE kd_order ='".$id."'")->result_array();
 			$this->load->view('backend/view_order',$data);
 	 	}else{
 	 		$this->session->set_flashdata('message', 'swal("Kosong", "Order Tidak Ada", "error");');
     		redirect('backend/tiket');
 	 	}
 	}
+
+	public function poinmasuk($id=''){
+		$cek = $this->input->get('order').$id;
+	 	$sqlcek = $this->db->query("SELECT * FROM order_tiket LEFT JOIN jadwal on order_tiket.kd_jadwal = jadwal.kd_jadwal WHERE kd_order ='".$cek."'")->result_array();
+	 	if ($sqlcek) {
+	 		$data['tiket'] = $sqlcek;
+			$data['title'] = "Manajemen Poin";
+			$data['sqlcekpoin'] = $this->db->query("SELECT * FROM poin_masuk WHERE kd_order ='".$id."'")->result_array();
+			$this->load->view('backend/poin_masuk',$data);
+	 	}else{
+	 		$this->session->set_flashdata('message', 'swal("Kosong", "Order Tidak Ada", "error");');
+    		redirect('backend/tiket');
+	 	}
+	}
+
+	public function poinkeluar(){
+
+		
+	}
+
+	public function addpoin(){
+			$simpan = array(
+					'kd_pelanggan' => $this->input->post('kd_pelanggan'),
+					'kd_order' => $this->input->post('kd_order'),
+					'jumlah_poin' => $this->input->post('jumlah_poin'),
+					'tanggal' => $this->input->post('tanggal')
+					 );
+
+			$this->db->insert('poin_masuk', $simpan);
+			$this->session->set_flashdata('message', 'swal("Berhasil", "Data Poin Di Simpan", "success");');
+			redirect('backend/order_tiket');
+	}
+
 
 	public function inserttiket($value=''){
 		$id = $this->input->post('kd_order');

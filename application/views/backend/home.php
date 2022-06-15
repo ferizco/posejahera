@@ -27,7 +27,7 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">DashBoard</h1>
+          <h1 class="h3 mb-4 text-gray-800">Dashboard Panel PO Sejahtera</h1>
           <!-- Content Row -->
           <div class="row">
 

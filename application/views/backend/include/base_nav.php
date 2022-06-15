@@ -61,6 +61,21 @@
           
           <?php } ?>
 
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <i class="fas fa-fw fa-gift"></i>
+              <span>Poin</span>
+            </a>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="<?php echo base_url('backend/poin') ?>">Akumulasi Poin</a>
+                <a class="collapse-item" href="<?php echo base_url() ?>backend/poin/riwayatpoin">Riwayat Poin</a>
+              </div>
+            </div>
+
+          </li>
+
         <?php if ($this->session->userdata('level') == '1') { ?>
            <a class="nav-link" href="<?php echo base_url() ?>backend/bank">
           <i class="fas fa fa-link"></i>

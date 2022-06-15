@@ -46,7 +46,7 @@
 				</div>
 			</form>
 		
-
+</div>
 		</div>
 <!-- End of Main Content -->
 

@@ -13,6 +13,7 @@ class Profile extends CI_Controller {
 
 	public function profilesaya($id=''){
 		$data['profile'] = $this->db->query("SELECT * FROM pelanggan WHERE kd_pelanggan LIKE '".$id."'")->row_array();
+		$data['poin'] = $this->db->query("SELECT kd_pelanggan, SUM(jumlah_poin) as total FROM poin_masuk WHERE kd_pelanggan LIKE '".$id."' ")->result_array();
 		// die(print_r($data));
 		$this->load->view('frontend/profile',$data);
 	}

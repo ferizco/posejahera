@@ -19,7 +19,7 @@ class Home extends CI_Controller {
     }
 
 	public function index(){
-        $data['post'] = $this->db->query("SELECT * FROM informasi")->result_array();
+        $data['post'] = $this->db->query("SELECT * FROM informasi order by created_at desc")->result_array();
 		$this->load->view('frontend/home', $data);		
 	}
 

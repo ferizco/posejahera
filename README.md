@@ -14,3 +14,5 @@ Pada Proyek ini menggunakan PO Sejahtera Lantra Wisata Travel sebagai studi kasu
 6. Input Informasi
 7. Input Feedback oleh pelanggan
 8. DataTables 
+9. Manajemen Poin 
+
